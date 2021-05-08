@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiCatalogoJogos</name>
+    </assembly>
+    <members>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.Get(System.Int32,System.Int32)">
+            <summary>
+            Retorna uma lista contendo todos os jogos cadastrados de forma paginada
+            </summary>
+            <remarks>
+            Não é possível retornar os jogos sem paginação
+            </remarks>
+            <param name="pagina">Número da página desejada</param>
+            <param name="quantidade">Quantidade de jogos para serem exibidos em cada página</param>
+            <returns>Retorna status Ok e a lista dos jogos cadastrados</returns>
+            <response code="200">Retorna a lista de jogos</response>
+            <response code="204">Não há jogos cadastrados</response>        
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.Get(System.Guid)">
+            <summary>
+            Retorna um jogo baseado no id fornecido
+            </summary>
+            <param name="id">Identificador do jogo a ser pesquisado</param>
+            <returns>Retorna status Ok e dados do jogo</returns>
+            <response code="200">Retorna o jogo encontrado</response>
+            <response code="204">Não há jogo cadastrado com o Id fornecido</response>        
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.Create(ApiCatalogoJogos.InputModel.GameInputModel)">
+            <summary>
+            Cadastra um novo jogo
+            </summary>
+            <param name="game">Dados do jogo para cadastrar</param>
+            <returns>Retorna status Created e dados do jogo</returns>
+            <response code="201">Jogo criado com sucesso</response>
+            <response code="422">Não foi possível cadastrar o jogo com os dados fornecidos</response>        
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.Update(System.Guid,ApiCatalogoJogos.InputModel.GameInputModel)">
+            <summary>
+            Atualiza os dados de um jogo já cadastrado
+            </summary>
+            <param name="id">Identificador do jogo a ser alterado</param>
+            <param name="game">Novos dados do jogo</param>
+            <returns>Retorna status Ok</returns>
+            <response code="200">Jogo alterado com sucesso</response>
+            <response code="404">Não foi encontrado o jogo com identificador fornecido</response>        
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.UpdatePrice(System.Guid,System.Double)">
+            <summary>
+            Altera o valor de venda de um jogo
+            </summary>
+            <param name="id">Identificador do jogo a ser alterado</param>
+            <param name="price">Novo valor de venda</param>
+            <response code="200">Jogo alterado com sucesso</response>
+            <response code="404">Não foi encontrado o jogo com identificador fornecido</response>        
+        </member>
+        <member name="M:ApiCatalogoJogos.Controllers.V1.GamesController.Delete(System.Guid)">
+            <summary>
+            Exclui um jogo cadastrado
+            </summary>
+            <param name="id">Identificador do jogo a ser excluído</param>
+            <response code="200">Jogo excluído com sucesso</response>
+            <response code="404">Não foi encontrado o jogo com identificador fornecido</response>        
+        </member>
+    </members>
+</doc>
