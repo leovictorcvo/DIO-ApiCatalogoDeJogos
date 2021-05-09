@@ -1,10 +1,10 @@
-<h1 align="center">:space_invader: DIO - API para cadastro de jogos :video_game:</h1>
+<h1 align="center">:space_invader: DIO - API para cadastro de jogos - MSSQL Server:video_game:</h1>
 
 ## :computer: Projeto
 
 API desenvolvida durante o bootcamp da [Take Blip](https://https://www.take.net/) na [Digital Innovation One - DIO](https://digitalinnovation.one/). 
 
-Este projeto tem como finalidade a construção de uma API responsável pela manutenção no cadastro de jogos utilizando a linguagem C#.
+Este projeto tem como finalidade a construção de uma API responsável pela manutenção no cadastro de jogos utilizando a linguagem C# e o banco de dados MS SQL Server
 
 ## :wrench: Características
 
