@@ -14,7 +14,7 @@ Este projeto tem como finalidade a construção de uma API responsável pela man
 
 ## :floppy_disk: Clonar repositório
 
-```git clone https://github.com/leovictorcvo/DIO-ApiCatalogoDeJogos.git```
+```git clone https://github.com/leovictorcvo/DIO-ApiCatalogoDeJogos-SQLServer.git```
 
 
 ## Author
